@@ -1,0 +1,201 @@
+<div
+  class="tb-position--relative main"
+  ngClass.xs="xs"
+  ngClass.sm="sm"
+  #animRefView
+>
+  <div class="tb-container tb-position--relative container">
+    <div fxLayout="column" fxLayoutAlign="start stretch">
+      <div
+        [@transitionText]="{ value: _mTriggerAnim, params: { animDelay: 100 } }"
+        fxLayout="row"
+        fxLayoutAlign="start end"
+      >
+        <div fxFlex="50" class="line tb-color-bg--black"></div>
+        <h4 class="title current-typo--h4 tb-flex--shrink-0 tb-color--pinkyRed">
+          <span class="tb-color--white">About</span>&nbsp;Me
+        </h4>
+        <div fxFlex="50" class="line tb-color-bg--black"></div>
+      </div>
+
+      <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+      <div fxLayout="row" fxLayout.xs="column">
+        <div
+          [fxFlexOrder]="1"
+          [fxFlexOrder.xs]="2"
+          fxFlex
+          fxFlex.xs="none"
+          fxFlex.sm="70"
+          fxLayout="column"
+        >
+          <div ngClass.gt-xs="tb-height--64" ngClass.xs="tb-height--20"></div>
+
+          <p
+            [@transitionText]="{
+              value: _mTriggerAnim,
+              params: { animDelay: 200 }
+            }"
+            class="current-typo--body1-medium tb-color--white"
+          >
+            I’m
+            <span class="tb-color--pinkyRed">Software Engineer</span>
+            with a passion for building dynamic, cross-platform mobile
+            applications and digital experiences. Specializing in React Native,
+            I create seamless, user-centric apps for iOS and Android, while also
+            leveraging full-stack expertise to develop scalable,
+            high-performance solutions. I thrive on turning complex challenges
+            into simple, efficient products and am dedicated to delivering
+            quality software that solves real-world problems.
+          </p>
+          <div
+            ngClass.gt-sm="tb-height--12"
+            ngClass.sm="tb-height--8"
+            ngClass.xs="tb-height--6"
+          ></div>
+
+          <p
+            [@transitionText]="{
+              value: _mTriggerAnim,
+              params: { animDelay: 200 }
+            }"
+            class="current-typo--body1-medium tb-color--white"
+          >
+            My objective is to make
+            <span class="tb-color--pinkyRed">development</span> as easy as
+            possible with simple and beautiful designs and
+            <span class="tb-color--pinkyRed">organized</span>&nbsp;code
+            patterns.
+          </p>
+
+          <div
+            ngClass.gt-sm="tb-height--56"
+            ngClass.sm="tb-height--46"
+            ngClass.xs="tb-height--32"
+          ></div>
+
+          <div
+            [@transitionText]="{
+              value: _mTriggerAnim,
+              params: { animDelay: 300 }
+            }"
+            fxLayout="row"
+          >
+            <div
+              fxFlex
+              fxLayout="column"
+              fxLayoutGap="12"
+              fxLayoutAlign="start start"
+            >
+              <h2 class="title current-typo--h3 tb-color--pinkyRed">
+                {{ experienceYears }}+
+              </h2>
+              <h4 class="title current-typo--h6 tb-color--white">
+                Years of Experience
+              </h4>
+            </div>
+
+            <div
+              fxFlex
+              fxLayout="column"
+              fxLayoutGap="12"
+              fxLayoutAlign="start start"
+            >
+              <h2 class="title current-typo--h3 tb-color--pinkyRed">10+</h2>
+              <h4 class="title current-typo--h6 tb-color--white">
+                Projects Completed
+              </h4>
+            </div>
+          </div>
+
+          <div
+            ngClass.gt-sm="tb-height--56"
+            ngClass.sm="tb-height--46"
+            ngClass.xs="tb-height--32"
+          ></div>
+
+          <div class="tb-height--8"></div>
+
+          <div
+            [@transitionText]="{
+              value: _mTriggerAnim,
+              params: { animDelay: 500 }
+            }"
+            fxLayout="row wrap"
+            fxLayoutGap="6"
+          >
+            <div class="skill" style="background-color: #f44040">
+              <h5 class="current-typo--h5 tb-color--white">Angular</h5>
+            </div>
+
+            <div class="skill" style="background-color: #68f17e">
+              <h5 class="current-typo--h5 tb-color--black">React</h5>
+            </div>
+
+            <div class="skill" style="background-color: #027dfd">
+              <h5 class="current-typo--h5 tb-color--white">React Native</h5>
+            </div>
+
+            <div class="skill" style="background-color: #027d">
+              <h5 class="current-typo--h5 tb-color--white">Express & NestJS</h5>
+            </div>
+          </div>
+
+          <div
+            ngClass.gt-sm="tb-height--56"
+            ngClass.sm="tb-height--46"
+            ngClass.xs="tb-height--32"
+          ></div>
+
+          <div
+            [@transitionText]="{
+              value: _mTriggerAnim,
+              params: { animDelay: 600 }
+            }"
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            fxLayoutGap="32"
+          >
+            <a
+              class="btn-area-cv"
+              href="https://drive.google.com/drive/folders/1cpvprHafQFaJ8C0vurxfF1tJtuR_567M?usp=sharing"
+              target="_blank"
+            >
+              <button mat-raised-button color="primary">
+                <span class="current-typo--button-medium">Download CV.</span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div
+          fxFlex.xs="none"
+          fxFlex
+          [fxFlexOrder.xs]="1"
+          [fxFlexOrder]="2"
+          class="image-container"
+          fxLayout="column"
+          fxLayoutAlign="center stretch"
+        >
+          <div
+            [@transitionImageScale]="{
+              value: _mTriggerAnim,
+              params: { animDelay: 800 }
+            }"
+            class="tb-text--align-center image-area"
+            #imageAreaView
+          >
+            <model-viewer
+              camera-controls
+              touch-action="pan-y"
+              [attr.src]="src"
+              style="height: 80vh; width: 100%"
+              alt="A 3D model of an astronaut"
+              ar-status="not-presenting"
+            >
+            </model-viewer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

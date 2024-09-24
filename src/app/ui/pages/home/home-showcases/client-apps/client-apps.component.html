@@ -1,0 +1,40 @@
+<div
+  class="tb-position--relative main current"
+  ngClass.xs="xs"
+  ngClass.sm="sm"
+  #animRefView
+>
+  <div fxLayout="column" fxLayoutAlign="start stretch">
+    <div
+      [@transitionText]="{ value: _mTriggerAnim, params: { animDelay: 100 } }"
+      fxLayout="row"
+      fxLayoutAlign="start end"
+    >
+      <div fxFlex="50" class="line tb-color-bg--black"></div>
+      <h4 class="title current-typo--h4 tb-flex--shrink-0 tb-color--pinkyRed">
+        <span class="tb-color--white">Client & Personal</span>&nbsp;Projects
+      </h4>
+      <div fxFlex="50" class="line tb-color-bg--black"></div>
+    </div>
+
+    <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+
+    <div
+      fxLayout="row wrap"
+      fxLayout.xs="column"
+      fxLayoutGap.gt-xs="8"
+      fxLayoutAlign.gt-xs="space-between center"
+      fxLayoutAlign.xs="start stretch"
+    >
+      <ng-container *ngFor="let app of _mClientApps">
+        <app-app-item
+          [name]="app.name"
+          [link]="app.link"
+          [image]="app.image"
+          [color]="app.color"
+        >
+        </app-app-item>
+      </ng-container>
+    </div>
+  </div>
+</div>

@@ -8,8 +8,6 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'niraj-portfolio';
-
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     this.addSvgIcons(iconRegistry, sanitizer);
   }

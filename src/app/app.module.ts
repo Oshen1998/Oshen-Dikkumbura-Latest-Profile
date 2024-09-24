@@ -10,9 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ApiModule } from './api/api.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -20,9 +18,9 @@ import { ApiModule } from './api/api.module';
     BrowserAnimationsModule,
     SharedModule,
     ContainerModule,
-    ApiModule
+    ApiModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

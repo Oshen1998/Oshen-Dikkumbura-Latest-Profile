@@ -1,0 +1,11 @@
+<div>
+  <div *ngFor="let item of articleData">
+    <app-article
+      [platform]="item.platform"
+      [title]="item.title"
+      [styles]="item.styles"
+      [link]="item.link"
+      [imgSrc]="item.src"
+    ></app-article>
+  </div>
+</div>
